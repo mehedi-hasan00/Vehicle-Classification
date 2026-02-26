@@ -33,6 +33,7 @@ By utilizing transfer learning with EfficientNetV2B0, the model learns:
 * **Domain Adaptation** – distinguishes between land, air, and water vehicles
 
 **Supported Classes:** Auto Rickshaws, Bikes, Cars, Motorcycles, Planes, Ships, Trains.
+📊 **Dataset Source:** [Vehicle Classification Dataset on Kaggle](https://www.kaggle.com/datasets/mohamedmaher5/vehicle-classification)
 
 ---
 
