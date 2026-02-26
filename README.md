@@ -7,13 +7,13 @@ A Deep Learning based **Image Classification** project trained to recognize diff
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-🌐 **Live App:** [https://your-app-link.streamlit.app/](https://your-app-link.streamlit.app/)
+🌐 **Live App:** [https://vehicle-classification.streamlit.app/](https://vehicle-classification.streamlit.app/)
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 **Streamlit App:** [https://your-app-link.streamlit.app/](https://your-app-link.streamlit.app/)
+🔗 **Streamlit App:** [https://vehicle-classification.streamlit.app/](https://vehicle-classification.streamlit.app/)
 
 Run the Streamlit app to upload an image and get instant vehicle classification.
 
@@ -46,10 +46,14 @@ Built using **Keras / TensorFlow**:
 5. **Dropout Layer** – (reduces overfitting)
 6. **Dense Output Layer** – Softmax activation (7 classes)
 
-**Training Configuration:**
-* Loss Function: `sparse_categorical_crossentropy`
-* Optimizer: `Adam`
-* Evaluation Metrics: `Accuracy`
+### Training Configuration:
+* **Image Size:** 224 x 224
+* **Batch Size:** 32
+* **Channels:** 3 (RGB)
+* **Loss Function:** `sparse_categorical_crossentropy`
+* **Optimizer:** Adam
+* **Evaluation Metrics:** Accuracy
+
 
 ---
 
@@ -109,6 +113,17 @@ matplotlib
 ---
 
 ## 📊 Performance
+
+### 📂 Dataset Overview
+* **Total Images Found:** 5,588 images
+* **Total Classes:** 7
+
+### 📉 Dataset Split (Batch Size: 32)
+* **Training Set:** 140 Batches (Approx. 4,480 images)
+* **Validation Set:** 17 Batches (Approx. 544 images)
+* **Test Set:** 18 Batches (Approx. 576 images)
+
+### 📈 Model Accuracy
 * Training Accuracy: ~97–98%
 * Validation Accuracy: ~99–99.8%
 * Test Accuracy: ~99–99.8%
